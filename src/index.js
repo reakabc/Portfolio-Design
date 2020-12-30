@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, {lazy, Suspense} from 'react'
+import ReactDOM from 'react-dom'
+import styled, {ThemeProvider} from 'styled-components'
+
+import theme from './theme/theme'
+import GlobalStyle from './theme/GlobalStyle'
+import SplashScreen from './components/SplashScreen'
+const App = lazy(()=>import('./App'))
+const root = document.getElementById("root");
+
+const ParentLayout = styled.div`
+background: url('/assets/rain.jpg');
+`
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+<ThemeProvider theme={theme}>
+<GlobalStyle/>
+<ParentLayout>
+    <Suspense fallback={<SplashScreen></SplashScreen>}>
+        <App />
+    </Suspense>
+</ParentLayout>
+</ThemeProvider>
+, root);
