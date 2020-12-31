@@ -25,7 +25,7 @@ justify-content: center;
 width: 400px;
 height: 530px;
 padding: 20px;
-background: url('assets/bg.png');
+background: url('./assets/bg.png');
 background-size: cover;
 border-top: 5px #3399ff solid;
 margin-inline: 5px;

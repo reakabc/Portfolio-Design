@@ -9,7 +9,7 @@ const App = lazy(()=>import('./App'))
 const root = document.getElementById("root");
 
 const ParentLayout = styled.div`
-background: url('/assets/rain.jpg');
+background: url('./assets/rain.jpg');
 `
 
 ReactDOM.render(
