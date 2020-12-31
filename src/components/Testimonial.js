@@ -71,7 +71,7 @@ class Testimonial extends React.Component{
 
                 <TestimonyContainer 
                     text={this.state.testimony[this.state.activeId].text}
-                    img={process.env.PUBLIC_URL+this.state.testimony[this.state.activeId].img}
+                    img={this.state.testimony[this.state.activeId].img}
                     name={this.state.testimony[this.state.activeId].name}
                     company={this.state.testimony[this.state.activeId].company} />
                     

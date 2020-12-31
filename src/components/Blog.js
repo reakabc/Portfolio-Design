@@ -102,7 +102,7 @@ class Blog extends React.Component{
                 <HeaderLine width={'100%'}/>
 
                 <BlogCard>
-                    <BlogImage src={process.env.PUBLIC_URL+"assets/cloud.jpg"} />
+                    <BlogImage src={"assets/cloud.jpg"} />
                     <Heading>Blog</Heading>
                     <HeaderLine width={'100%'} line={'dotted'} />
                     <Para>
@@ -113,7 +113,7 @@ class Blog extends React.Component{
                 </BlogCard>
 
                 <BlogCard>
-                    <BlogImage src={process.env.PUBLIC_URL+"assets/cloud.jpg"} />
+                    <BlogImage src={"assets/cloud.jpg"} />
                     <Heading>Blog</Heading>
                     <HeaderLine width={'100%'} line={'dotted'} />
                     <Para>
@@ -124,7 +124,7 @@ class Blog extends React.Component{
                 </BlogCard>
 
                 <BlogCard>
-                    <BlogImage src={process.env.PUBLIC_URL+"assets/cloud.jpg"} />
+                    <BlogImage src={"assets/cloud.jpg"} />
                     <Heading>Blog</Heading>
                     <HeaderLine width={'100%'} line={'dotted'} />
                     <Para>
@@ -135,7 +135,7 @@ class Blog extends React.Component{
                 </BlogCard>
 
                 <BlogCard>
-                    <BlogImage src={process.env.PUBLIC_URL+"assets/cloud.jpg"} />
+                    <BlogImage src={"assets/cloud.jpg"} />
                     <Heading>Blog</Heading>
                     <HeaderLine width={'100%'} line={'dotted'} />
                     <Para>

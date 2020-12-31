@@ -85,7 +85,7 @@ class TestimonyContainer extends React.Component{
         return(
             <InnerContainer>
                 <TextBox>{this.props.text}</TextBox>
-                <TriangleImage src={process.env.PUBLIC_URL+"assets/tri.svg"}/>
+                <TriangleImage src={"assets/tri.svg"}/>
                 <RoundImage src={this.props.img} />
                 <Heading>{this.props.name}</Heading>
                 <SubHeading>{this.props.company}</SubHeading>

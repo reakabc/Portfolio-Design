@@ -140,7 +140,7 @@ class Home extends React.Component{
     render(){
         return(
             <HomeWrapper key={this.props.para}>
-                <RoundImage key={this.props.para} src={process.env.PUBLIC_URL+this.props.img} />
+                <RoundImage key={this.props.para} src={this.props.img} />
                 <Heading>Hi, I'm ReaK AbC!</Heading>
                 <SubHeading>Web Designer And Developer</SubHeading>
                 <HeaderLine />
